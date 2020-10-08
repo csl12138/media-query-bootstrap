@@ -1,0 +1,452 @@
+html, body {
+    width: 100%;
+    /* height: 100%; */
+}
+html {
+    font-size: 10px;
+}
+/*网站头部*/
+.header {
+    width: 100%;
+    height: 43px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    z-index: 999;
+}
+/*顶部导航*/
+.header .nav {
+    width: 1140px;
+    height: 43px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header .nav h3 {
+    float: left;
+    height: 43px;
+    line-height: 43px;
+    margin-right: 15px;
+}
+.header .nav h3 a{
+    font-size: 1.8rem;
+    color: #9d9d9d;
+}
+.header .nav h3 a:hover,
+.header .nav .left li a:hover,
+.header .nav .right li a:hover{
+    color: #fff;
+}
+.header .nav .left {
+    float: left;
+    position: relative;
+}
+.header .nav .left::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 667px;
+    top: 13px;
+    background-color: #f00;
+}
+.header .nav .left li {
+    float: left;
+}
+.header .nav .left li a {
+    display: inline-block;
+    padding: 19px 15px 0px;
+    font-size: 1.4rem;
+    color: #9d9d9d;
+}
+.header .nav .right {
+    float: right;
+}
+.header .nav .right li a{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #9d9d9d;
+    padding: 15px 15px 0px 15px;
+}
+.header .nav .menu {
+    display: none;
+}
+.header .second-nav {
+    height: 0px;
+    overflow: hidden;
+}
+/*banner区域*/
+.banner {
+    width: 100%;
+    height: 297px;
+    padding: 90px 0px 110px;
+    background-image: linear-gradient(45deg,#020031,#6d3353);
+}
+.banner .content {
+    width: 1140px;
+    height: 297px;
+    color: #fff;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.banner .content h1 {
+    font-size: 10rem;
+    font-weight: 600;
+    text-align: center;
+}
+.banner .content p {
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    margin: 35px 0px 0px;
+}
+.banner .btn {
+    text-align: center;
+    padding: 50px 0 17px;
+}
+.banner .btn a {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+    padding: 13px 35px 17px;
+    background-color: #337ab7;
+    border-radius: 7px;
+    box-shadow: inset 0px -4px 0px #23527c;
+}
+.banner .btn a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.2);
+    opacity: 0;
+    transition: opacity .3s;
+}
+.banner .btn a:hover::after{
+    opacity: 1;
+}
+.banner span {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+.banner span a {
+    font-size: 1.4rem;
+    color: hsla(0,0%,100%,.5);
+    transition: all .2s ease-in-out;
+}
+.banner span a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+/*推荐*/
+.recommend {
+    width: 76%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/*推荐-头部*/
+.recommend .recommend-header {
+    width: 60%;
+    margin: 60px auto 40px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.recommend .recommend-header h3 {
+    font-size: 4.2rem;
+    color: #000;
+}
+.recommend .recommend-header p {
+    font-size: 1.4rem;
+    color: #52527a;
+    margin: 20px 0px 10px;
+}
+/*推荐-图片区*/
+.recommend .pic {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-betWeen;
+}
+.recommend .pic .items {
+    width: 23%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.recommend .pic .items img {
+    width: 100%;
+}
+.recommend .pic .items .dec {
+    margin: 25px 0px 30px;
+}
+.recommend .pic .items .dec span {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+.recommend .pic .items .dec span a {
+    color: #337ab7;
+}
+.recommend .pic .items .dec span a:hover {
+    color: #23527c;
+}
+.recommend .pic .items .dec i {
+    font-size: 1.6rem;
+    color: #777;
+    padding: 15px 0px;
+}
+.recommend .pic .items .dec p {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 24px;
+}
+/*网站页脚*/
+.footer {
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px 0px;
+    border-top: 1px solid #e5e5e5;
+}
+.footer .content {
+    max-width: 76%;
+    margin: 0 auto;
+}
+.footer .content .content-top {
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer .content .content-left {
+    float: left;
+    padding-left: 15px;
+}
+.footer .content .content-left p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 1.4rem;
+}
+.footer .content .content-right {
+    float: right;
+    padding-right: 15px;
+}
+.footer .content .content-right ul li {
+    width: 70px;
+    float: left;
+    margin-right: 55px;
+}
+.footer .content .content-right ul li strong,
+.footer .content .content-right ul li span {
+    display: block;
+}
+.footer .content .content-right ul li strong {
+    font-size: 1.6rem;
+    color: #563D7C;
+    margin: 0px 0px 10px 0px;
+}
+.footer .content .content-right ul li span {
+    font-size: 1.4rem;
+    padding-top: 5px;
+}
+.footer .content .content-right ul li span a {
+    color: #777;
+}
+.footer .content .content-right ul li span a:hover {
+    text-decoration: underline;
+}
+.footer .content .content-bottom {
+    margin-top: 25px;
+}
+.footer .content .content-bottom p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #777;
+}
+.return-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: rgba(119, 119, 119, .7);
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+.return-top:hover {
+    background-color: rgba(119, 119, 119, 1)
+}
+/*优雅降级*/
+/*<1360(我承认我菜了)*/
+@media screen and (max-width: 1360px) {
+    .footer .content .content-left {
+        padding: 0;
+    }
+    .footer .content .content-right {
+        padding: 0;
+    }
+    .footer .content .content-right ul li {
+        margin-right: 35px;
+    }
+}
+/*<1200*/
+@media screen and (max-width: 1200px) {
+    .header .nav {
+        width: 930px;
+    }
+    .banner {
+        height: 250px;
+    }
+    .banner .content {
+        width: 930px;
+    } 
+    .recommend .recommend-header h3 {
+        font-size: 3.8rem;
+    }
+    .recommend .pic .items {
+        width: 30%;
+    }
+    .footer .content .content-left {
+        float: none;
+    }
+    .footer .content .content-right {
+        float: none;
+        margin-top: 35px;
+    }
+    .footer .content .content-right ul li {
+        margin-right: 85px;
+    }
+}
+/*<992*/
+@media screen and (max-width: 992px) {
+    .header .nav {
+        width: 850px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .header .nav h3 a {
+        font-size: 1.4rem;
+    }
+    .header .nav .left li a {
+        padding-top: 15px;
+    }
+    .header .nav .right {
+        display: none;
+    }
+    .banner {
+        height: 220px;
+    }
+    .banner .content {
+        width: 850px;
+    }
+    .banner .content h1 {
+        font-size: 6rem;
+    }
+    .banner .content p {
+        font-size: 2rem;
+    }
+    .recommend .recommend-header h3 {
+        font-size: 3.5rem;
+    }
+    .recommend .pic .items {
+        width: 45%;
+    }
+
+}
+/*<850*/
+@media screen and (max-width: 850px) {
+    .header {
+        height: 48px;
+        line-height: 48px;
+    }
+    .header .nav {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .header .nav .menu {
+        display: block;
+        float: right;         
+        cursor: pointer;
+    }
+    .header .nav h3 a {
+        font-size: 1.8rem;
+    }
+    .header .nav .left {
+        display: none;
+    }
+    .header .nav .right {
+        display: none;
+    }
+    /*二级导航*/
+    .header .second-nav {
+        transition: height .4s ease-in-out; 
+        width: 100%;
+        position: relative;
+        top: -3px;
+        padding: 0px 41px;
+        background-color: #222;
+        border-top: 1px solid #333;
+    }
+    .header .second-nav li a {
+        color: #9d9d9d;
+        font-size: 1.6rem;
+    }
+    .header .second-nav li a:hover {
+        color: #fff;
+    }
+    .header .second-nav::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        right: 91px;
+        top: 272px;
+        background-color: #f00;
+    }
+    /**********************************/
+    .banner {
+        height: 190px;
+    }
+    .banner .content {
+        padding: 0;
+        width: 100%;
+    }
+    .banner .content h1 {
+        font-size: 5rem;
+    }
+    .banner .content p {
+        font-size: 1.7rem;
+    }
+    .recommend .recommend-header h3 {
+        font-size: 3.2rem;
+    }
+    .recommend .pic {
+        justify-content: center;
+    }
+    .recommend .pic .items {
+        width: 60%;
+    }
+    .footer .content .content-right ul li {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .footer .content .content-right ul li span {
+        padding: 5px 0px;
+        font-size: 1.4rem;
+    }
+    .footer .content .content-right ul li strong {
+        font-size: 1.7rem;
+    }
+}
